@@ -19,14 +19,15 @@ export default defineConfig({
   build:{
     target:'modules',
     outDir:'dist',
+    emptyOutDir:true,
     sourcemap:true,
     lib:{
       entry: './src/index.ts',
       name: 'kyadmin.lodop', 
       formats: [
-        'es','cjs','umd','iife'
+        'es','umd','iife'
       ], 
-      fileName: 'kyadmin-lodop'
+      fileName: 'kyadmin-lodop',
     }
   }
 })
